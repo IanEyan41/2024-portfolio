@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <style>
+      .merriweather-light {
+        font-family: "Merriweather", serif;
+        font-weight: 300;
+        font-style: normal;
+      }
+      .merriweather-bold {
+        font-family: "Merriweather", serif;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .mar {
+        margin: 0 155px 0 155px;
+      }
+      .start {
+        margin-right: 200px;
+      }
+      .card-container {
+        display: flex; /* Use flexbox for layout */
+
+        justify-content: flex-start; /* Align items to the left */
+        gap: 10px; /* Add space between the cards */
+      }
+      .fixed-card-body {
+        flex: none; /* Prevent it from growing or shrinking */
+        height: 370px;
+        overflow-y: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navigation-->
+    <section>
+      <div class="container">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link text-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                href="./project.html"
+                class="nav-link text-secondary"
+                aria-current="page"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./design.html" class="nav-link active bg-secondary"
+                >Designs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link text-secondary"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </header>
+      </div>
+    </section>
+    <!--Card1-->
+    <section>
+      <div class="container my-5">
+        <h2 class="mar merriweather-light">
+          My Daily <span class="merriweather-bold">UI</span> Design Challenge
+        </h2>
+        <div class="p-5 text-center bg-body-tertiary rounded-3 mar">
+          <!--Card 1-->
+          <div class="card-container">
+            <div class="card fixed-card-body" style="width: 18rem">
+              <a href="./Image_design/Hotel.png">
+                <img
+                  src="./Image_design/Hotel.png"
+                  class="card-img-top"
+                  alt="Hotel"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title merriweather-bold text-start">
+                  Hotel Web Design
+                </h5>
+                <p class="card-text text-start">
+                  A modern hotel web design in my head
+                </p>
+                <span class="badge rounded-pill text-bg-secondary start"
+                  >Canva</span
+                >
+
+                <a
+                  href="https://www.canva.com/design/DAGZFcVwebE/OTEVuvl0_wf3_ckvaoQu7Q/edit?utm_content=DAGZFcVwebE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                  class="btn btn-dark btn-sm start mt-3"
+                >
+                  View</a
+                >
+              </div>
+            </div>
+            <!--Card2-->
+            <div class="card fixed-card-body" style="width: 18rem">
+              <a href="./Image_design/Sign_up.png">
+                <img
+                  src="./Image_design/Sign_up.png"
+                  class="card-img-top"
+                  alt="sign up page"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title merriweather-bold text-start">
+                  Sign Up Web Layout
+                </h5>
+                <p class="card-text text-start">
+                  Sign up page for open house website
+                </p>
+                <span class="badge rounded-pill text-bg-secondary start"
+                  >Canva</span
+                >
+
+                <a
+                  href="https://ianhotel.my.canva.site/openit"
+                  class="btn btn-dark btn-sm start mt-3"
+                >
+                  View</a
+                >
+              </div>
+            </div>
+
+            <!--Card3-->
+            <div class="card" style="width: 18rem">
+              <a href="./Image_design/checkout.png">
+                <img
+                  src="./Image_design/checkout.png"
+                  class="card-img-top"
+                  alt="checkout page"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title merriweather-bold text-start">
+                  Checkout Layout page
+                </h5>
+                <p class="card-text text-start">
+                  Checkout page for mobile layout using figma.
+                </p>
+                <span class="badge rounded-pill text-bg-primary start"
+                  >Figma</span
+                >
+
+                <a
+                  href="https://www.figma.com/proto/SiWcq0xCEewhiDweSw9AYu/Checkout-Page?node-id=603-21&t=YkUJzTSvTab9cgbn-1"
+                  class="btn btn-dark btn-sm start mt-3"
+                >
+                  View</a
+                >
+              </div>
+            </div>
+          </div>
+          <hr />
+
+          <!--Card4 NextLine-->
+          <div class="card-container mt-3">
+            <div class="card" style="width: 18rem">
+              <a href="./Image_design/landingPage.png">
+                <img
+                  src="./Image_design/landingPage.png"
+                  class="card-img-top"
+                  alt="checkout page"
+                />
+              </a>
+              <div class="card-body">
+                <h5 class="card-title merriweather-bold text-start">
+                  Landing Page
+                </h5>
+                <p class="card-text text-start">
+                  Men's Fashion landing page website layout.
+                </p>
+                <span class="badge rounded-pill text-bg-primary start"
+                  >Figma</span
+                >
+
+                <a
+                  href="https://www.figma.com/proto/HfAFhPv9GYEcO4LZPYjhu0/Untitled?node-id=1-2&p=f&t=RgEt5b9nGeMb9Vsd-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1"
+                  class="btn btn-dark btn-sm start mt-3"
+                >
+                  View</a
+                >
+              </div>
+            </div>
+          </div>
+          <!--Card5-->
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</html>
