@@ -15,6 +15,8 @@
       crossorigin="anonymous"
     />
     <style>
+
+      
       .hero img {
         border-radius: 15%;
       }
@@ -86,6 +88,62 @@
     background-color: grey; /* Change to desired color */
     border-radius: 25%;
 }
+
+/* Default size for larger screens */
+.feature-icon,
+#icon-grid img,
+.carousel-inner img {
+  width: 3rem; /* Default size for icons on larger screens */
+  height: 3rem; /* Default height */
+}
+
+/* Responsive adjustments for smaller screen sizes */
+@media (max-width: 768px) {
+  /* Reduce the size of feature icons and images */
+  .feature-icon,
+  #icon-grid img,
+  .carousel-inner img {
+    width: 2rem;  /* Make icons smaller */
+    height: 2rem; /* Make icons smaller */
+  }
+
+  /* Additional adjustments for images if needed */
+  .carousel-inner img {
+    height: 120px; /* Adjust carousel image size on mobile */
+  }
+
+  #icon-grid img {
+    height: 25px; /* Smaller icons in the 'Familiar Skills' section on mobile */
+  }
+  .d,.featured-projects{
+    display: none;
+  }
+ 
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens (e.g., mobile phones) */
+  .feature-icon,
+  #icon-grid img,
+  .carousel-inner img {
+    width: 1.5rem;  /* Even smaller icons on extra-small screens */
+    height: 1.5rem; /* Even smaller icons on extra-small screens */
+  }
+
+  #icon-grid img {
+    height: 20px;  /* Further reduce the size of the icons */
+  }
+
+  .carousel-inner img {
+    height: 100px;  /* Adjust carousel image size for very small screens */
+  }
+  .d,.featured-projects{
+    display: none;
+  }
+  
+}
+
+
 
 
 
@@ -191,7 +249,7 @@
     </section>
     <section class="Education">
       
-      <div class="container text-center">
+      <div class="container text-center c1">
         <div class="p-5 px-0 mx-5 text-center bg-body-tertiary rounded-3">
           <h1 class="text-body-emphasis merriweather-regular">Education</h1><br><br>
           <div class="row justify-content-center">
@@ -203,7 +261,7 @@
               <p class="fs-5 text-start ms-3">Diploma in Information Technology</p>
               <ul>
                 <li class="text-start">August 2025 Graduate <div class="dropdown">
-                  <button class="mb-3 mt-3 btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button class="mb-3 mt-3 btn btn-secondary dropdown-toggle d" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     All Undergraduated Courses
                   </button>
                   <ul class="dropdown-menu">
@@ -211,7 +269,7 @@
                     <li><button class="dropdown-item" type="button">IT Service Management</button></li>
                     <li><button class="dropdown-item" type="button">Capstone Project</button></li>
                   </ul>
-                  <button class=" btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <button class=" btn btn-primary dropdown-toggle d" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     All Graduated Courses
                   </button>
                   <ul class="dropdown-menu">
@@ -250,7 +308,7 @@
                 <li class="text-start">Completed Front-end course</li>
                 
               </ul>
-              <button class=" btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class=" btn btn-primary dropdown-toggle d" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                 All Graduated Courses
               </button>
               <ul class="dropdown-menu">
